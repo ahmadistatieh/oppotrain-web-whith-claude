@@ -1,0 +1,62 @@
+:root {
+  --gold: #B88E2F;
+  --gold-dark: #a67d24;
+  --charcoal: #333333;
+  --text-muted: #898989;
+  --cream: #FFF3E3;
+  --beige-section: #FCF8F3;
+  --card-bg: #F4F5F7;
+  --badge-red: #E97171;
+  --badge-green: #2EC1AC;
+  --white: #ffffff;
+  --maxw: 1200px;
+  --font-head: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; color: inherit; }
+
+ul { list-style: none; }
+
+button { font-family: inherit; cursor: pointer; }
+
+/* Shared buttons */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+.btn-solid {
+  background: var(--gold);
+  color: #fff;
+  padding: 14px 48px;
+  border: 2px solid var(--gold);
+}
+.btn-solid:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 12px 60px;
+}
+.btn-outline:hover { background: var(--gold); color: #fff; }
+
+/* Shared section heading */
+.section-head { text-align: center; margin-bottom: 40px; }
+.section-head h2 { font-size: 2rem; font-weight: 700; color: #333; }
+.section-head p { color: var(--text-muted); font-weight: 500; }

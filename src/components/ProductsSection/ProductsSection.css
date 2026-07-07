@@ -1,0 +1,25 @@
+.products {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 40px 32px 64px;
+}
+.products-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: #3a3a3a;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.show-more-wrap { text-align: center; margin-top: 40px; }
+
+@media (max-width: 992px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .product-grid { grid-template-columns: 1fr; }
+}

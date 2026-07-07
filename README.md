@@ -5,6 +5,8 @@ A responsive, single-page furniture e-commerce landing page built with **React**
 reusable components, data-driven rendering, and fully responsive layout — no CSS
 frameworks.
 
+🔗 **Live demo:** https://furniro-three-theta.vercel.app
+
 ## ✨ Features
 
 - **Sticky header** with logo, navigation, action icons, and a mobile hamburger menu
@@ -76,6 +78,32 @@ components focused on markup and behavior.
 
 See [`CLAUDE.md`](./CLAUDE.md) for a deeper breakdown of components, skills practiced,
 and future-improvement notes.
+
+## ▲ Deployment
+
+The site is deployed on **[Vercel](https://vercel.com/)**:
+
+- **Live URL:** https://furniro-three-theta.vercel.app
+
+Vercel auto-detects the Vite framework preset, so no extra configuration is required:
+
+| Setting | Value |
+|---|---|
+| Framework preset | Vite |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Install command | `npm install` |
+
+### Deploy it yourself
+
+```bash
+npm i -g vercel      # or use npx vercel
+vercel login
+vercel --prod        # builds on Vercel and deploys to production
+```
+
+Alternatively, import the GitHub repository at [vercel.com/new](https://vercel.com/new)
+to enable automatic deployments on every push to `main`.
 
 ## 📝 Notes
 
